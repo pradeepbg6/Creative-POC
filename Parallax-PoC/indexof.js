@@ -1,5 +1,6 @@
 function scrollFooter(scrollY, heightFooter)
 {
+    debugger;
     console.log(scrollY);
     console.log(heightFooter);
 

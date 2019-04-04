@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple parallax using css</title>
+</head>
+<style>
+body, html {
+    height: 100%;
+}
+.parallax-image {
+    background: url("https://i.ytimg.com/vi/RSgBxUfhW4k/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: white;
+}
+.content span {
+    background: #000;
+    color: white;
+    font-size: 20px;
+    border: 5px solid green;
+    padding: 20px;
+    border-radius: 8px;
+}
+</style>
+<body>
+    <div class="parallax-image"></div>
+    <div class="content">
+        <span>SCROLL DOWN</span>
+    </div>
+    <div class="parallax-image"></div>
+</body>
+</html>
